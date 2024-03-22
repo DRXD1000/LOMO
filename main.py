@@ -1,5 +1,13 @@
+#%%
+import sys
+sys.path.append(r"C:\Users\Matthias\Desktop\LOMO\lomo")
+
+
 from lomo.src.utils import LearningRateScheduler,DynamicLossScaler, get_loss
 from lomo.src.lomo import LOMO
+
+
+#%%
 import deepspeed
 from deepspeed import comm as dist
 from deepspeed.accelerator import get_accelerator
